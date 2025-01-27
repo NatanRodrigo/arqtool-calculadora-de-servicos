@@ -1,0 +1,663 @@
+#home-page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    /* Ajuste isso conforme necessário */
+}
+
+.container-lista {
+    flex: 7;
+    /* 70% do espaço total */
+    background-color: #D9D9D9;
+}
+
+.logout-btn {
+    background-image: url('../../assets/logout-btn.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+    /* Ajuste o tamanho do botão */
+    width: 2.5vw;
+    /* Ajuste este valor conforme necessário */
+    height: 5vh;
+    /* Ajuste este valor conforme necessário */
+    margin-right: 1vw;
+}
+
+.open-menu-btn {
+    background-image: url('../../assets/menu.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+    /* Ajuste o tamanho do botão */
+    width: 2.5vw;
+    /* Ajuste este valor conforme necessário */
+    height: 5vh;
+    /* Ajuste este valor conforme necessário */
+    margin-left: 1vw;
+}
+
+#menu-lateral {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    /* Ajuste este valor conforme necessário */
+    height: 100%;
+    background-color: #1F4173;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+
+    /* Adicione mais estilos conforme necessário */
+}
+
+#menu-lateral h1 {
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #1F4173;
+    border-radius: 5px;
+    width: 100%;
+}
+
+
+
+.menu-btn {
+    color: white;
+    background-color: #1F4173;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    /* Isso fará com que os botões ocupem a maior parte do menu */
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.menu-btn:hover {
+    background-color: #123456;
+    /* Altere para a cor desejada quando o mouse passar sobre o botão */
+}
+
+
+
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 0.8;
+    background-color: #1F4173;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.header-content-right,
+.header-content-left {
+    display: flex;
+    align-items: center;
+}
+
+
+
+#footer {
+    flex: 1.4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1F4173;
+    border-top-left-radius: 10px;
+    /* Ajuste este valor conforme necessário */
+    border-top-right-radius: 10px;
+    /* Ajuste este valor conforme necessário */
+}
+
+#footer-title {
+    color: white;
+}
+
+#main-content {
+    background-color: #D9D9D9;
+    /* Adiciona um padding para criar uma distância das laterais */
+    padding: 0 20px;
+
+    /* Estilização básica para a lista */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.projeto-card {
+    /* Estilização para cada item da lista */
+    height: 5vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.projeto-nome {
+    /* Estilização para o nome do projeto */
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.projeto-descricao {
+    /* Estilização para a descrição do projeto */
+    font-size: 16px;
+    color: #666;
+}
+
+.empty-area {
+    /* Estilização para a área em branco quando não há projetos */
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ccc;
+}
+
+.not-found-text {
+    color: #615E5E;
+}
+
+#novo-projeto-btn {
+    /* Estilização para o botão "Calcular novo projeto" */
+    background-color: #3D9970; /* Cor de fundo verde oliva */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+
+    /* Ajusta o tamanho do botão */
+    width: 100px;
+    /* Ajuste este valor conforme necessário */
+    height: 6vh;
+    /* Ajuste este valor conforme necessário */
+
+    /* Fixa o botão no lado direito da tela */
+    position: fixed;
+    right: 20px;
+    /* Ajuste este valor para alterar a distância do botão da borda direita da tela */
+    bottom: 16vh;
+    /* Ajuste este valor para alterar a distância do botão da borda inferior da tela */
+}
+
+.modal {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: #d3d6d4;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    max-width: 500px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.modal-content p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.modal-content input {
+    width: 70%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.modal-content button {
+    background-color: #1F4173;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+
+.modal-content button:hover {
+    background-color: #123456;
+}
+
+.modal-header {
+    background-color: #1F4173;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input::placeholder {
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    position: absolute;
+    top: 1px;
+    padding: 3px; 
+    display: inline-block; /* Permite o uso de padding e centraliza verticalmente o texto */
+    line-height: 1; /* Garante que o texto esteja centralizado verticalmente no espaço do padding */
+    right: 5px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    
+}
+
+
+.close:hover,
+.close:focus {
+    color: #C80000;
+    text-decoration: none;
+}
+
+input::placeholder {
+    text-align: center;
+}
+
+.projeto-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.projeto-thead {
+    background-color: #f2f2f2;
+}
+
+.projeto-thead th {
+    padding: 10px;
+    text-align: left;
+}
+
+.projeto-tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.projeto-row:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.projeto-row:hover {
+    background-color: #d0e2f2;
+    /* Azul claro para o efeito de hover */
+    cursor: pointer;
+}
+
+
+.not-found-text {
+    text-align: center;
+}
+
+#header-etapas {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100px; /* Defina a altura desejada do header */
+    background-color: #1F4173;
+    padding: 0 10px; /* Espaçamento interno para não colar nas bordas */
+}
+
+.back-button {
+    background-image: url('../../assets/voltar.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+    /* Ajuste o tamanho do botão */
+    width: 2.5vw;
+    /* Ajuste este valor conforme necessário */
+    height: 5vh;
+    /* Ajuste este valor conforme necessário */
+    margin-right: 1vw;
+    position: absolute;
+    left: 10px; /* Espaçamento da borda esquerda */
+
+
+
+}
+
+.title-header {
+    color: white; /* Cor do texto */
+    position: absolute;
+    left: 50%; /* Posiciona o centro do título no meio */
+    transform: translateX(-50%); /* Ajusta para que o meio do título fique no centro */
+}
+
+/* Adicione um elemento vazio para manter o equilíbrio se necessário */
+#header-etapas::after {
+    content: '';
+    flex: 1;
+}
+
+.container-lista-etapas {
+    background-color: #D9D9D9;
+    display: flex;
+    flex: 7;
+    justify-content: space-between;
+}
+
+/* Estilização Etapas */
+
+.container-lista-etapas {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espaçamento entre as linhas */
+}
+
+.row-etapas-one {
+    background-color: #D9D9D9;
+    min-height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Espaçamento entre os elementos dentro da linha */
+}
+
+.row-etapas-two {
+    background-color: #D9D9D9;
+    min-height: 62.5vh;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Espaçamento entre os elementos dentro da linha */
+}
+
+/* Estilização para a primeira linha que contém o formulário */
+.row-etapas:first-child {
+    align-items: flex-start; /* Alinha os itens ao início da linha */
+}
+
+.form-activity-etapas {
+    flex-basis: 50%; /* Define uma largura base para o formulário */
+}
+
+/* Estilização para a segunda linha que contém as tabelas */
+.row-etapas:last-child {
+    align-items: stretch; /* Estica os itens para preencher a altura da linha */
+}
+
+.etapas-column-left,
+.atividades-column-right {
+    background-color: #D9D9D9;
+    flex-basis: 50%; /* Define uma largura base para as tabelas */
+}
+
+/* Adicionando estilos para as tabelas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd; /* Borda sutil para as células da tabela */
+    padding: 8px;
+    text-align: left;
+}
+
+th, tfoot {
+    background-color: #1F4173; /* Cor primária para o cabeçalho da tabela */
+    color: white;
+}
+
+.form-activity-etapas button.btn-register-stage {
+    background-color: #1F4173; /* Cor primária para o botão */
+    color: white;
+    cursor: pointer;
+}
+
+.form-activity-etapas {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espaçamento entre os elementos do formulário */
+}
+
+.form-activity-etapas input,
+.form-activity-etapas select,
+.form-activity-etapas button,
+.label-activity-etapas {
+    width: 20vw;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd; /* Borda sutil */
+    margin: auto; /* Adiciona margem automática para centralizar */
+}
+
+.complexity-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espaçamento entre os elementos */
+        margin: auto; /* Adiciona margem automática para centralizar */
+
+}
+
+.complexity-label {
+    font-size: 16px;
+    color: #333; /* Cor escura para melhor leitura */
+}
+
+.complexity-select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc; /* Borda sutil */
+    background-color: #fff; /* Fundo branco */
+    font-size: 16px;
+}
+
+.complexity-button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none; /* Sem borda */
+    background-color: #1F4173; /* Cor primária do projeto */
+    color: white; /* Texto branco */
+    font-size: 16px;
+    cursor: pointer; /* Cursor de clique */
+}
+
+.btn-limpar-atividades {
+    padding: 6px 12px;
+    border-radius: 5px;
+    border: none; /* Sem borda */
+    background-color: #1F4173; /* Cor primária do projeto */
+    color: white; /* Texto branco */
+    font-size: 16px;
+    cursor: pointer; /* Cursor de clique */
+}
+
+
+.etapas-table td:hover {
+    background-color:#d0e2f2; /* Cor mais escura para o efeito de hover */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+
+button:disabled {
+    background-color: #cccccc; /* Cor cinza para indicar que está desativado */
+    color: #666666; /* Texto em cinza escuro para contraste */
+    cursor: not-allowed; /* Cursor de 'não permitido' */
+}
+
+button.btn-register-stage:disabled {
+    background-color: #cccccc; /* Cor cinza para indicar que está desativado */
+    color: #666666; /* Texto em cinza escuro para contraste */
+    cursor: not-allowed; /* Cursor de 'não permitido' */
+}
+
+#main-content-etapas > div {
+    background-color: #D9D9D9;
+    display: flex;
+    justify-content: center; /* Alinha horizontalmente ao centro */
+    margin-bottom: 15px;
+}
+
+.btn-next-etapas {
+    padding: 6px 12px;
+    border-radius: 5px;
+    border: none; /* Sem borda */
+    background-color: #1F4173; /* Cor primária do projeto */
+    color: white; /* Texto branco */
+    font-size: 16px;
+    cursor: pointer; /* Cursor de clique */
+}
+
+.btn-limpar-atividades {
+    background-color: #FF851B; /* Cor de fundo laranja */
+    /* Outras propriedades do botão */
+}
+
+.btn-remove {
+    background-color: #C80000; /* Cor de fundo vermelha */
+    color: white; /* Cor do texto */
+    border: none; /* Sem borda */
+    padding: 5px 10px; /* Espaçamento interno menor */
+    font-size: 14px; /* Tamanho da fonte reduzido */
+    cursor: pointer; /* Cursor do mouse como ponteiro */
+    transition: background-color 0.2s ease; /* Transição suave para cor de fundo */
+    border-radius: 3px; /* Bordas levemente arredondadas */
+}
+
+.btn-remove:hover {
+    background-color: #A00000; /* Cor de fundo mais escura ao passar o mouse */
+}
+
+.btn-remove:focus {
+    outline: none; /* Remove o contorno ao focar (para navegadores que aplicam por padrão) */
+}
+
+.cell-content {
+    padding: 10px; /* Espaçamento interno para não ficar muito apertado */
+    border-bottom: 1px solid #e1e1e1; /* Uma borda sutil na parte inferior para separar as linhas */
+    color: #333; /* Cor escura para o texto, mas não preto puro para ser mais suave */
+    font-size: 25px; /* Tamanho de fonte confortável para leitura */
+}
+
+/* Estilo para a última célula de cada linha, onde está o botão Remover, para alinhar o botão à direita */
+.cell-content:last-child {
+    text-align: right; /* Alinha o conteúdo à direita */
+}
+
+/* Estilo para a linha que indica que não há projetos cadastrados */
+.not-found-text {
+    text-align: center; /* Centraliza o texto */
+    padding: 20px 0; /* Mais espaçamento vertical */
+    font-style: italic; /* Estilo itálico para diferenciar do resto do conteúdo */
+    color: #999; /* Cor mais clara para indicar um estado "vazio" ou "inativo" */
+}
+
+.form-projeto {
+    height: 40%;
+    max-height: 40%;
+    flex-direction: row;
+}
+
+.form-projeto .form-group {
+    margin: auto;
+    flex: 4;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.form-projeto .form-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-projeto .form-input {
+    width: 15%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.btn-calcular {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.resultado-projeto {
+    height: 60%;
+    max-height: 60%;
+    width: 35%; /* Define a largura para 40% do container */
+    max-width: 100%; /* Garante que não ultrapasse o tamanho da tela */
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.resultado-item {
+    display: flex; /* Alterado para flex para exibir em linha */
+    justify-content: space-between; /* Espaçamento entre label e valor */
+    align-items: center; /* Centraliza verticalmente */
+    border-bottom: 1px solid #eaeaea;
+    padding: 15px 0; /* Aumento do espaçamento vertical */
+}
+
+.resultado-label {
+    font-weight: bold;
+    margin-bottom: 0; /* Removido o espaçamento abaixo do label */
+    font-size: 1.5em; /* Aumento do tamanho da fonte */
+}
+
+.resultado-valor {
+    color: #333;
+    font-size: 2em; /* Aumento do tamanho da fonte */
+}
+
+
+
+
+
+
+
+
+
