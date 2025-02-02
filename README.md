@@ -67,6 +67,90 @@ Este projeto foi um grande desafio para nossa equipe, pois envolveu análise det
 Nosso objetivo é continuar aprimorando o ArqTool para torná-lo ainda mais útil e acessível a outros profissionais! 🚀
 
 
+🛠 Como Utilizar o Projeto
+
+1️⃣ Clonar o Repositório
+
+Antes de tudo, faça o clone do repositório para sua máquina local:
+
+
+bash
+
+Copiar
+
+Editar
+
+git clone https://github.com/seu-usuario/arqtool.git
+
+Em seguida, acesse a pasta do projeto:
+
+
+bash
+
+Copiar
+
+Editar
+
+cd arqtool
+
+2️⃣ Requisitos
+
+Certifique-se de ter os seguintes softwares instalados:
+
+
+Visual Studio (para rodar o backend em C# e ASP.NET)
+
+Visual Studio Code (para o frontend em React)
+
+Node.js e npm (para gerenciar pacotes do frontend)
+
+Banco de dados SQL configurado
+
+3️⃣ Executando o Backend
+
+Abra o Visual Studio.
+
+Carregue a solução do projeto (.sln).
+
+Configure o banco de dados no arquivo de conexão do projeto.
+
+Execute o backend pressionando F5 ou clicando em Run.
+
+4️⃣ Executando o Frontend
+
+No terminal, acesse a pasta do frontend:
+
+bash
+
+Copiar
+
+Editar
+
+cd frontend
+
+Instale as dependências do projeto:
+
+bash
+
+Copiar
+
+Editar
+
+npm install
+
+Inicie o servidor de desenvolvimento:
+
+bash
+
+Copiar
+
+Editar
+
+npm run dev
+
+O frontend estará disponível em http://localhost:5173 (ou outra porta exibida no terminal).
+
+Agora seu projeto está pronto para uso! 🚀 Se precisar de mais detalhes, confira a documentação ou abra uma issue no repositório. 😊
 
 
 
