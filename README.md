@@ -1,38 +1,68 @@
 ArqTool 🏗️📐
+
 📌 Cálculos essenciais para projetos de arquitetura em um só lugar!
+
 🔎 Sobre o Projeto
+
 O ArqTool surgiu a partir das dificuldades relatadas por estudantes de arquitetura em precificar seu trabalho e realizar cálculos essenciais para seus projetos. Muitos utilizavam planilhas pouco intuitivas e precisavam recorrer a ferramentas externas.
+
 
 Para solucionar esse problema, desenvolvemos uma plataforma completa que centraliza todas as funcionalidades essenciais para profissionais iniciantes na área da arquitetura, aprimorando a experiência e otimizando a gestão dos seus projetos.
 
+
 🚀 Objetivo
+
 Criar uma ferramenta que facilite o trabalho dos recém-formados em arquitetura, melhorando e expandindo a tabela que já utilizam, além de adicionar novos recursos para tornar o processo mais eficiente.
 
+
 🎯 Público-Alvo
+
 Recém-formados em arquitetura.
+
 Profissionais já atuantes no mercado.
+
 Possibilidade de expansão para áreas como tecnologia, engenharia e nutrição no futuro.
+
 🛠 Funcionalidades da Primeira Versão
+
 ✅ Registro e login de usuários.
+
 ✅ Cadastro e gerenciamento de despesas.
+
 ✅ Cálculo automático do valor da hora de trabalho.
+
 ✅ Gestão de projetos (cadastrar, editar, excluir e consultar).
+
 ✅ Cadastro de atividades e classificação por etapas.
+
 ✅ Cálculo do valor total do projeto.
+
 ✅ Definição de metas mensais para acompanhamento financeiro.
 
+
 📈 Futuras Melhorias
+
 🔹 Refinamento do layout para melhor experiência do usuário.
+
 🔹 Desenvolvimento de uma versão mobile.
+
 🔹 Adição de novos recursos para ampliar a usabilidade.
+
 🔹 Personalização do sistema para diferentes áreas de atuação.
 
+
 💻 Tecnologias Utilizadas
+
 Banco de Dados: SQL
+
 Frontend: React
+
 Backend: C# e ASP.NET
+
 🏆 Conclusão
+
 Este projeto foi um grande desafio para nossa equipe, pois envolveu análise detalhada das necessidades dos usuários e adaptação de funcionalidades essenciais. No entanto, o resultado foi extremamente positivo e bem recebido pelos estudantes de arquitetura.
+
 
 Nosso objetivo é continuar aprimorando o ArqTool para torná-lo ainda mais útil e acessível a outros profissionais! 🚀
 
